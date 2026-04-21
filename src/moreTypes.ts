@@ -12,8 +12,32 @@ type Book = {
     name:string
 };
 
+
 let bookString ='{name : "who moved my cheese"}';
 
 let bookObject = JSON.parse(bookString) as Book;
 console.log(bookObject);
+
+
+//const inputElement = document.getElementById("username") as HTMLInputElement;
+
+
+
+let val:any;
+
+val="chai";
+val = [1,2,3];
+val=2.1;
+console.log(val.toUppercase());
+
+
+
+let newVal:unknown;
+newVal="chai";
+newVal = [1,2,3];
+newVal=2.1;
+
+if(typeof newVal == "string"){
+    newVal.toUpperCase();
+}
 
