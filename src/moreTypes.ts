@@ -41,3 +41,20 @@ if(typeof newVal == "string"){
     newVal.toUpperCase();
 }
 
+
+
+
+try{
+    //code 
+}
+catch(error){
+    if(error instanceof Error){
+        console.log(error.message);
+    }
+    console.log("Error",error);
+}
+
+
+
+const data:unknown = "chai aur code";
+const strData : string = data as string;
