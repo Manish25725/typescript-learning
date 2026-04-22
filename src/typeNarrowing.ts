@@ -14,6 +14,8 @@ function serveChai(msg? : string){
     return `Serving default chai`;
 }
 
+
+
 function orderChai(size : "medium" | "small" | "large" | number){
     if(size == 'small'){
         return `small cutting chai..`;
@@ -53,6 +55,8 @@ type chai={
 };
 
 
+
+//type-guarding...
 function isChai(obj: any): obj is chai {
     return (
         typeof obj === "object" &&
@@ -74,6 +78,7 @@ function serveOrder(item : chai | string){
 
 
 //------------------------------------------
+
 
 type CreditCard = {
     cardNumber: string;

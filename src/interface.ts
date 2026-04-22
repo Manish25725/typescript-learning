@@ -9,7 +9,7 @@ type TeacRecipe = {
 
 class MasalaChai implements TeacRecipe{
     water: number=12;
-    milk=20;
+    milk=20
 }
 
 //“In simple object structures both type and interface work similarly.
