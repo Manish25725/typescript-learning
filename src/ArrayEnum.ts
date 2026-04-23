@@ -18,3 +18,24 @@ const menu:Chai[]=[
 
 const cities : readonly string[] =["Delhi","Jaipur"];
 //cities.push(cities);  --> not possible..
+
+
+const table : number[][] = [
+    [1,2,3],
+    [4,5,6]
+]
+
+
+
+//tuple in typescript...
+let chaiTuple:[string,number];
+chaiTuple=["Masala",23];
+
+
+let userInfo:[string,number,boolean?];
+userInfo=["manish",23];
+
+const location:readonly [number,number] = [23,45];
+
+
+
