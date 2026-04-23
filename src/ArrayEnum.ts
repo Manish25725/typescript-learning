@@ -39,3 +39,24 @@ const location:readonly [number,number] = [23,45];
 
 
 
+//named tuple(for better readability)
+const chaiItesm:[name:string,price:number]= ["Masala",23];
+
+
+enum CupSize{
+    SMALL,// 0
+    MEDIUM, // 1
+    LARGE   // 2
+}
+
+const size = CupSize.LARGE;
+console.log(size);
+
+
+
+enum Status{
+    PENDING = 100,
+    SERVED, // 101
+    CANCELLED // 102
+}
+
