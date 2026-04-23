@@ -60,3 +60,16 @@ enum Status{
     CANCELLED // 102
 }
 
+
+
+enum ChaiType{
+    MASALA="masala",
+    GINGER="ginger"
+}
+
+
+function makeChai(type: ChaiType){
+    console.log(`Making ${type}`);
+}
+
+makeChai(ChaiType.MASALA);
