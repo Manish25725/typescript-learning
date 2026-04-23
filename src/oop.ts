@@ -31,3 +31,32 @@ class Account{
 const c = new Account();
 
 
+// for protected...
+class Shop{
+    protected  shopName="Phoenx"
+}
+
+class branch extends Shop{
+    getName(){
+        return this.shopName;
+    }
+}
+
+
+class Wallet{
+    #balance=100;
+
+    getBalance(){
+       return this.#balance;
+    }
+}
+
+
+
+class Cup{
+    readonly capacity:number = 21
+
+    constructor(capacity:number){
+        this.capacity=capacity;
+    }
+}
