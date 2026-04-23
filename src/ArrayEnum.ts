@@ -73,3 +73,12 @@ function makeChai(type: ChaiType){
 }
 
 makeChai(ChaiType.MASALA);
+
+
+//ALSO possible not recommended...
+enum RandomEnum{
+    ID=1,
+    NAME="chai"
+}
+
+
