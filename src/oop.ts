@@ -60,3 +60,21 @@ class Cup{
         this.capacity=capacity;
     }
 }
+
+
+
+class flex{
+    private _price: number = 0;
+
+    set price(value: number) {
+        if (value < 0) {
+            console.log("Price cannot be negative");
+            return;
+        }
+        this._price = value;
+    }
+
+    get price() {
+        return this._price;
+    }
+}
