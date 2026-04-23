@@ -29,10 +29,27 @@ console.log(chaiBrew);
 
 type Item={name:"string",quantity:number};
 type Address={street:"string",pin:number};
- 
+
 type Order={
     id:string,
     items:Item[],
     address:Address[]
 }
 
+
+type Chai={
+    name:string,
+    price:number,
+    isHot:boolean
+}
+
+
+const updateChai = (updates:Partial<Chai>)=>{
+    console.log("updating chai with",updates);
+}
+updateChai({price:34});
+
+
+let newData: Partial<Chai> = {
+    price: 34
+}
