@@ -13,3 +13,17 @@ function makeOrder(order:string){
     if(!order) return null;
     return order;
 }
+
+function logChai():void{
+    console.log("Chai is ready");
+}
+
+
+// function orderChai(type?:string){
+// }
+
+
+function orderChai(type:string="Hello"){
+
+}
+
