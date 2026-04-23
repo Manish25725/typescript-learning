@@ -53,3 +53,46 @@ updateChai({price:34});
 let newData: Partial<Chai> = {
     price: 34
 }
+
+
+
+type ChaiOrder={
+    name?:string,
+    quantity?:number
+};
+
+
+const placeOrder=(order:Required<ChaiOrder>)=>{
+    console.log(order);
+}
+
+
+type parent={
+    name:string,
+    price:number,
+    isHot:boolean,
+    ingrediants:string[]
+};
+
+
+
+type child = Pick<parent,"name"|"price">;
+
+const asdInfo:child={
+    name:"narrowing",
+    price:30
+};
+
+console.log(asdInfo);
+
+
+
+type ChaiNew={
+    name:string,
+    price:number,
+    isHot:boolean,
+    secretIngrediants:string[]
+}
+
+type  PublicChai=Omit<ChaiNew,"secretIngrediants">;
+
