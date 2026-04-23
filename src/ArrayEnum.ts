@@ -82,3 +82,7 @@ enum RandomEnum{
 }
 
 
+let  t :[string,number] = ["masala",34];
+t.push(12);
+
+
