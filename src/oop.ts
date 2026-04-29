@@ -102,3 +102,16 @@ class MyChai extends Drink{
 
 //compostion...
 
+
+class Heater{
+    heat(){}
+}
+
+class chaiMaker{
+    constructor(private heater:Heater){}
+
+    make(){
+        this.heater.heat();
+    }
+}
+
