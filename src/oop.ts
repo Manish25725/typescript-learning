@@ -6,9 +6,7 @@ class Chai{
         this.price=price
         this.flavour=flavour
         console.log(this);
-    }
-
-   
+    }   
 }
 
 // const masalachai = new Chai(2,"ginger");
@@ -62,7 +60,6 @@ class Cup{
 }
 
 
-
 class flex{
     private _price: number = 0;
 
@@ -78,3 +75,30 @@ class flex{
         return this._price;
     }
 }
+
+const a = new flex();
+a.price=21;
+console.log(a.price);
+
+
+class EkChai{
+    static showName = "Chaicode caffe"
+    constructor(public flavour:string){}
+}
+console.log(EkChai.showName);
+
+
+abstract class Drink{
+    abstract make() : void
+}
+
+class MyChai extends Drink{
+    make(){
+        console.log("make chai");
+    }
+}
+
+
+
+//compostion...
+
