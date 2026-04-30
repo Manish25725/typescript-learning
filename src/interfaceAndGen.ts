@@ -28,5 +28,14 @@ const apply50 :DiscountCalculator = (p) => p*1.5;
 interface TeaMachine{
     start():void
     stop():void
-}
+};
 
+
+const machine:TeaMachine={
+    start(){
+        console.log("start");
+    },
+    stop(){
+        console.log("stop");
+    }
+}
