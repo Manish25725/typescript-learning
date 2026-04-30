@@ -1,7 +1,6 @@
 interface asd{
     flavour:string,
     price:number,
-
 };
 
 const masala :asd={
@@ -39,3 +38,43 @@ const machine:TeaMachine={
         console.log("stop");
     }
 }
+
+
+//index signature...
+
+interface ChaiRatings{
+    [flavour:string] : number
+};
+
+
+const ratings:ChaiRatings={
+    masala:3.4,
+    ginger:4.4
+}
+
+interface User{
+    name:string
+};
+
+interface User{
+    age:number
+};
+
+const u:User={
+    name:"manish",
+    age:21
+}
+
+
+interface A{
+    a:string
+}
+
+interface B{
+    b:string
+}
+
+
+
+
+
